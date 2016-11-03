@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E966F89F1DCA8368004DD2BD /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E966F89E1DCA8368004DD2BD /* Pokemon.swift */; };
 		E9C5CEE21DC8EA5D00FC2B8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C5CEE11DC8EA5D00FC2B8E /* AppDelegate.swift */; };
 		E9C5CEE41DC8EA5D00FC2B8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C5CEE31DC8EA5D00FC2B8E /* ViewController.swift */; };
 		E9C5CEE71DC8EA5D00FC2B8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9C5CEE51DC8EA5D00FC2B8E /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 		E9C5CEEF1DC8EA5D00FC2B8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9C5CEED1DC8EA5D00FC2B8E /* LaunchScreen.storyboard */; };
 		E9C5CEFA1DC8EA5D00FC2B8E /* UsingMapsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C5CEF91DC8EA5D00FC2B8E /* UsingMapsTests.swift */; };
 		E9C5CF051DC8EA5D00FC2B8E /* UsingMapsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C5CF041DC8EA5D00FC2B8E /* UsingMapsUITests.swift */; };
+		E9C5CF131DC8EA8F00FC2B8E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C5CF121DC8EA8F00FC2B8E /* MapViewController.swift */; };
+		E9C5CF151DC8F8B200FC2B8E /* PokemonAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C5CF141DC8F8B200FC2B8E /* PokemonAnnotationView.swift */; };
+		E9C5CF171DC8F9DC00FC2B8E /* Pikachu.png in Resources */ = {isa = PBXBuildFile; fileRef = E9C5CF161DC8F9DC00FC2B8E /* Pikachu.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E966F89E1DCA8368004DD2BD /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		E9C5CEDE1DC8EA5D00FC2B8E /* UsingMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsingMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C5CEE11DC8EA5D00FC2B8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9C5CEE31DC8EA5D00FC2B8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +54,9 @@
 		E9C5CF001DC8EA5D00FC2B8E /* UsingMapsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UsingMapsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C5CF041DC8EA5D00FC2B8E /* UsingMapsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingMapsUITests.swift; sourceTree = "<group>"; };
 		E9C5CF061DC8EA5D00FC2B8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9C5CF121DC8EA8F00FC2B8E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		E9C5CF141DC8F8B200FC2B8E /* PokemonAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonAnnotationView.swift; sourceTree = "<group>"; };
+		E9C5CF161DC8F9DC00FC2B8E /* Pikachu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Pikachu.png; path = UsingMaps/Pikachu.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,11 @@
 		E9C5CED51DC8EA5D00FC2B8E = {
 			isa = PBXGroup;
 			children = (
+				E9C5CEE51DC8EA5D00FC2B8E /* Main.storyboard */,
+				E9C5CF121DC8EA8F00FC2B8E /* MapViewController.swift */,
+				E9C5CF141DC8F8B200FC2B8E /* PokemonAnnotationView.swift */,
+				E966F89E1DCA8368004DD2BD /* Pokemon.swift */,
+				E9C5CF161DC8F9DC00FC2B8E /* Pikachu.png */,
 				E9C5CEE01DC8EA5D00FC2B8E /* UsingMaps */,
 				E9C5CEF81DC8EA5D00FC2B8E /* UsingMapsTests */,
 				E9C5CF031DC8EA5D00FC2B8E /* UsingMapsUITests */,
@@ -101,7 +114,6 @@
 			children = (
 				E9C5CEE11DC8EA5D00FC2B8E /* AppDelegate.swift */,
 				E9C5CEE31DC8EA5D00FC2B8E /* ViewController.swift */,
-				E9C5CEE51DC8EA5D00FC2B8E /* Main.storyboard */,
 				E9C5CEEB1DC8EA5D00FC2B8E /* Assets.xcassets */,
 				E9C5CEED1DC8EA5D00FC2B8E /* LaunchScreen.storyboard */,
 				E9C5CEF01DC8EA5D00FC2B8E /* Info.plist */,
@@ -235,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9C5CF171DC8F9DC00FC2B8E /* Pikachu.png in Resources */,
 				E9C5CEEF1DC8EA5D00FC2B8E /* LaunchScreen.storyboard in Resources */,
 				E9C5CEEC1DC8EA5D00FC2B8E /* Assets.xcassets in Resources */,
 				E9C5CEE71DC8EA5D00FC2B8E /* Main.storyboard in Resources */,
@@ -263,8 +276,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9C5CEEA1DC8EA5D00FC2B8E /* UsingMaps.xcdatamodeld in Sources */,
+				E9C5CF151DC8F8B200FC2B8E /* PokemonAnnotationView.swift in Sources */,
 				E9C5CEE41DC8EA5D00FC2B8E /* ViewController.swift in Sources */,
 				E9C5CEE21DC8EA5D00FC2B8E /* AppDelegate.swift in Sources */,
+				E9C5CF131DC8EA8F00FC2B8E /* MapViewController.swift in Sources */,
+				E966F89F1DCA8368004DD2BD /* Pokemon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +322,7 @@
 				E9C5CEE61DC8EA5D00FC2B8E /* Base */,
 			);
 			name = Main.storyboard;
+			path = UsingMaps;
 			sourceTree = "<group>";
 		};
 		E9C5CEED1DC8EA5D00FC2B8E /* LaunchScreen.storyboard */ = {
@@ -509,6 +526,7 @@
 				E9C5CF0B1DC8EA5D00FC2B8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9C5CF0C1DC8EA5D00FC2B8E /* Build configuration list for PBXNativeTarget "UsingMapsTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +535,7 @@
 				E9C5CF0E1DC8EA5D00FC2B8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9C5CF0F1DC8EA5D00FC2B8E /* Build configuration list for PBXNativeTarget "UsingMapsUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +544,7 @@
 				E9C5CF111DC8EA5D00FC2B8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
