@@ -29,6 +29,10 @@ class AddNewPokemonViewController: UIViewController {
         apiURL = URL(string: "https://still-wave-26435.herokuapp.com/pokemon/")
 
     }
+    
+    @IBAction func cancelButtonPressed() {
+        dismiss(animated: true, completion: nil)
+    }
 
     @IBAction func addButtonPressed() {
         
@@ -48,11 +52,15 @@ class AddNewPokemonViewController: UIViewController {
         let jsonString = String(data: json, encoding: .utf8)
         
         
-        apiURL = URL(string: "http://colbyg.com/post/post.cgi")
+        apiURL = URL(string: "https://still-wave-26435.herokuapp.com/pokemon")
         
         var request = URLRequest(url: apiURL)
         request.httpMethod = "POST"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.httpBody = jsonString?.data(using: .utf8)
+        
+        print(jsonString!)
+        print("######")
         
         URLSession.shared.dataTask(with: request) { (data: Data?, response: URLResponse?, error: Error?) in
             guard let data = data, error == nil else { // check for fundamental networking error
@@ -69,7 +77,7 @@ class AddNewPokemonViewController: UIViewController {
             print("responseString = \(responseString)")
         }.resume()
         
-        
+        dismiss(animated: true, completion: nil)
     }
     
     

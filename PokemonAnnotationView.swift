@@ -17,13 +17,9 @@ class PokemonAnnotationView: MKAnnotationView {
     override init(annotation: MKAnnotation?, reuseIdentifier: String?) {
         super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
         
-        //annotationImage = UIImage(named: "Pikachu.png")
-        //let imgView = UIImageView(image: annotationImage)
-        
         annotationImage = UIImage()
         annotationImageView = UIImageView()
         
-        //self.addSubview(annotationImageView)
     }
     
     func addImageToView() {
@@ -32,6 +28,7 @@ class PokemonAnnotationView: MKAnnotationView {
         
         self.addSubview(annotationImageView)
     }
+    
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

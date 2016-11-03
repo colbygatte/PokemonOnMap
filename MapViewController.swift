@@ -35,11 +35,12 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         self.mapView.showsUserLocation = true
         
         // zooming
-        let coordinate:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 29.73, longitude: -95.39)
+        let coordinate: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 29.73, longitude: -95.39)
         let span = MKCoordinateSpanMake(0.02, 0.02)
         let region = MKCoordinateRegionMake(coordinate, span)
         self.mapView.setRegion(region, animated: true)
         
+        // get pokemon json
         URLSession.shared.dataTask(with: apiURL) { (data: Data?, response: URLResponse?, error: Error?) in
             let json = try! JSONSerialization.jsonObject(with: data!, options: []) as! [[String:Any]]
             
@@ -85,7 +86,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         if annotation is MKUserLocation {
             return nil
         }
-        
         
         // why does annotation.title have to be unwwrapped twice?
         let pokeId = Int(annotation.title!!)!

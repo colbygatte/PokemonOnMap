@@ -23,6 +23,7 @@ class PostViewController: UIViewController {
         var request = URLRequest(url: url)
         
         request.httpMethod = "POST"
+        request.addValue("application/json", forHTTPHeaderField: "Content-type")
         request.httpBody = testJson
         
         URLSession.shared.dataTask(with: request) { data, response, error in

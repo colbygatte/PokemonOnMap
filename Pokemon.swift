@@ -9,7 +9,7 @@
 import UIKit
 
 class Pokemon: NSObject {
-    //var id: Int!
+    
     var imageURL: URL!
     var latitude: Double!
     var longitude: Double!
