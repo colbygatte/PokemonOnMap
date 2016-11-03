@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E966F89F1DCA8368004DD2BD /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E966F89E1DCA8368004DD2BD /* Pokemon.swift */; };
+		E9BD48E81DCAD2DF00CF6839 /* AddNewPokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BD48E71DCAD2DF00CF6839 /* AddNewPokemonViewController.swift */; };
+		E9BD48EB1DCADCF400CF6839 /* Houston, TX.gpx in Resources */ = {isa = PBXBuildFile; fileRef = E9BD48EA1DCADCF400CF6839 /* Houston, TX.gpx */; };
+		E9BD48ED1DCAF63E00CF6839 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BD48EC1DCAF63E00CF6839 /* PostViewController.swift */; };
 		E9C5CEE21DC8EA5D00FC2B8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C5CEE11DC8EA5D00FC2B8E /* AppDelegate.swift */; };
 		E9C5CEE41DC8EA5D00FC2B8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C5CEE31DC8EA5D00FC2B8E /* ViewController.swift */; };
 		E9C5CEE71DC8EA5D00FC2B8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9C5CEE51DC8EA5D00FC2B8E /* Main.storyboard */; };
@@ -18,7 +21,6 @@
 		E9C5CF051DC8EA5D00FC2B8E /* UsingMapsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C5CF041DC8EA5D00FC2B8E /* UsingMapsUITests.swift */; };
 		E9C5CF131DC8EA8F00FC2B8E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C5CF121DC8EA8F00FC2B8E /* MapViewController.swift */; };
 		E9C5CF151DC8F8B200FC2B8E /* PokemonAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C5CF141DC8F8B200FC2B8E /* PokemonAnnotationView.swift */; };
-		E9C5CF171DC8F9DC00FC2B8E /* Pikachu.png in Resources */ = {isa = PBXBuildFile; fileRef = E9C5CF161DC8F9DC00FC2B8E /* Pikachu.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 
 /* Begin PBXFileReference section */
 		E966F89E1DCA8368004DD2BD /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		E9BD48E71DCAD2DF00CF6839 /* AddNewPokemonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewPokemonViewController.swift; sourceTree = "<group>"; };
+		E9BD48EA1DCADCF400CF6839 /* Houston, TX.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Houston, TX.gpx"; path = "../Houston, TX.gpx"; sourceTree = "<group>"; };
+		E9BD48EC1DCAF63E00CF6839 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		E9C5CEDE1DC8EA5D00FC2B8E /* UsingMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsingMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C5CEE11DC8EA5D00FC2B8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9C5CEE31DC8EA5D00FC2B8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +61,6 @@
 		E9C5CF061DC8EA5D00FC2B8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9C5CF121DC8EA8F00FC2B8E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		E9C5CF141DC8F8B200FC2B8E /* PokemonAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonAnnotationView.swift; sourceTree = "<group>"; };
-		E9C5CF161DC8F9DC00FC2B8E /* Pikachu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Pikachu.png; path = UsingMaps/Pikachu.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,14 +88,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E9BD48E61DCAD2BA00CF6839 /* MapViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9C5CF121DC8EA8F00FC2B8E /* MapViewController.swift */,
+				E9C5CF141DC8F8B200FC2B8E /* PokemonAnnotationView.swift */,
+				E966F89E1DCA8368004DD2BD /* Pokemon.swift */,
+			);
+			name = MapViewController;
+			sourceTree = "<group>";
+		};
 		E9C5CED51DC8EA5D00FC2B8E = {
 			isa = PBXGroup;
 			children = (
 				E9C5CEE51DC8EA5D00FC2B8E /* Main.storyboard */,
-				E9C5CF121DC8EA8F00FC2B8E /* MapViewController.swift */,
-				E9C5CF141DC8F8B200FC2B8E /* PokemonAnnotationView.swift */,
-				E966F89E1DCA8368004DD2BD /* Pokemon.swift */,
-				E9C5CF161DC8F9DC00FC2B8E /* Pikachu.png */,
+				E9BD48EC1DCAF63E00CF6839 /* PostViewController.swift */,
+				E9BD48E71DCAD2DF00CF6839 /* AddNewPokemonViewController.swift */,
+				E9BD48E61DCAD2BA00CF6839 /* MapViewController */,
 				E9C5CEE01DC8EA5D00FC2B8E /* UsingMaps */,
 				E9C5CEF81DC8EA5D00FC2B8E /* UsingMapsTests */,
 				E9C5CF031DC8EA5D00FC2B8E /* UsingMapsUITests */,
@@ -117,6 +130,7 @@
 				E9C5CEEB1DC8EA5D00FC2B8E /* Assets.xcassets */,
 				E9C5CEED1DC8EA5D00FC2B8E /* LaunchScreen.storyboard */,
 				E9C5CEF01DC8EA5D00FC2B8E /* Info.plist */,
+				E9BD48EA1DCADCF400CF6839 /* Houston, TX.gpx */,
 				E9C5CEE81DC8EA5D00FC2B8E /* UsingMaps.xcdatamodeld */,
 			);
 			path = UsingMaps;
@@ -247,9 +261,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9C5CF171DC8F9DC00FC2B8E /* Pikachu.png in Resources */,
 				E9C5CEEF1DC8EA5D00FC2B8E /* LaunchScreen.storyboard in Resources */,
 				E9C5CEEC1DC8EA5D00FC2B8E /* Assets.xcassets in Resources */,
+				E9BD48EB1DCADCF400CF6839 /* Houston, TX.gpx in Resources */,
 				E9C5CEE71DC8EA5D00FC2B8E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,10 +289,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9BD48ED1DCAF63E00CF6839 /* PostViewController.swift in Sources */,
 				E9C5CEEA1DC8EA5D00FC2B8E /* UsingMaps.xcdatamodeld in Sources */,
 				E9C5CF151DC8F8B200FC2B8E /* PokemonAnnotationView.swift in Sources */,
 				E9C5CEE41DC8EA5D00FC2B8E /* ViewController.swift in Sources */,
 				E9C5CEE21DC8EA5D00FC2B8E /* AppDelegate.swift in Sources */,
+				E9BD48E81DCAD2DF00CF6839 /* AddNewPokemonViewController.swift in Sources */,
 				E9C5CF131DC8EA8F00FC2B8E /* MapViewController.swift in Sources */,
 				E966F89F1DCA8368004DD2BD /* Pokemon.swift in Sources */,
 			);

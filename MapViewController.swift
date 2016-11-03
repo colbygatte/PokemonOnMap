@@ -12,17 +12,16 @@ import MapKit
 
 class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
-    
-    
     var pokemon = [Int:Pokemon]()
     @IBOutlet weak var mapView: MKMapView!
     var locationManager: CLLocationManager!
+    var currentLocation: CLLocationCoordinate2D!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let apiURL = URL(string: "https://still-wave-26435.herokuapp.com/pokemon/all")!
 
-        
         
         self.locationManager = CLLocationManager()
         self.locationManager.delegate = self
@@ -30,8 +29,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         self.locationManager.distanceFilter = kCLDistanceFilterNone // are you confined by some distance?
         self.locationManager.startUpdatingLocation()
         self.locationManager.requestAlwaysAuthorization()
-        self.mapView.delegate = self
         
+        
+        self.mapView.delegate = self
         self.mapView.showsUserLocation = true
         
         // zooming
@@ -75,6 +75,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         
     }
 
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        currentLocation = (manager.location?.coordinate)!
+    }
 
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
@@ -116,21 +119,21 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         }
     }
     
+
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "AddNewPokemon" {
+            let addNewPokemonVC = segue.destination as! AddNewPokemonViewController
+            addNewPokemonVC.currentLocation = self.currentLocation
+            
+        }
+    }
     
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }
